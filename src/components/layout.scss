@@ -514,8 +514,10 @@ li {
 ol li {
   padding-left: 0;
 }
-ul li {
-  padding-left: 0;
+ul {
+  li {
+    padding-left: 0;
+  }
 }
 li > ol {
   margin-left: 1.45rem;
@@ -619,4 +621,13 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+//Custom styles
+
+:root{
+  --purple: rebeccapurple;
+}
+header {
+  background: var(--purple);
 }
