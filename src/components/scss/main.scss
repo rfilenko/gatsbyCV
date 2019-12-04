@@ -106,10 +106,10 @@ ion-icon {
   li {
     padding-left: 0;
     margin-bottom: 0.5em;
-    ion-icon {
-      color: var(--primary);
-      width: 15px;
-      height: 15px;
+    display: flex;
+    align-items: center;
+    svg {
+      margin-right: 0.5rem;
     }
   }
 }

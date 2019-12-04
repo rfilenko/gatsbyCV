@@ -1,21 +1,27 @@
 import React from "react"
+import MdAt from 'react-ionicons/lib/MdAt'
+
+import MdMailOpen from 'react-ionicons/lib/MdMailOpen'
+import LogoSkype from 'react-ionicons/lib/LogoSkype'
+import LogoTwitter from 'react-ionicons/lib/LogoTwitter'
 
 const Contact = () => {
   return (
     <div className="contact">
-      <ion-icon name="at" size="large"></ion-icon>
+        <MdAt color="#38b2ac" fontSize="45px"/>
       <h2>
         <span>contact </span>
       </h2>
       <ul>
         <li>
-          <ion-icon name="mail-open"></ion-icon> roman.filenko@gmail.com
+          <MdMailOpen color="#38b2ac" fontSize="20px"/>
+           roman.filenko@gmail.com
         </li>
         <li>
-          <ion-icon name="logo-skype"></ion-icon> romafilenko
+          <LogoSkype color="#38b2ac" fontSize="20px"/> romafilenko
         </li>
         <li>
-          <ion-icon name="logo-twitter"></ion-icon> @r_filenko
+          <LogoTwitter color="#38b2ac" fontSize="20px"/> @r_filenko
         </li>
       </ul>
     </div>
