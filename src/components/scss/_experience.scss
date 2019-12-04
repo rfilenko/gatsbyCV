@@ -1,0 +1,47 @@
+// .work.experience section
+.work.experience {
+  p {
+    text-align: left;
+    span {
+      padding-left: 1.5rem;
+      margin-top: 0.5rem;
+      display: block;
+    }
+  }
+}
+time {
+  color: var(--primary);
+}
+time:before {
+  display: inline-block;
+  content: "";
+  background: var(--primary);
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  vertical-align: bottom;
+  margin-right: 0.1rem;
+  margin-bottom: 0.4rem;
+}
+@media screen and (min-width: 800px) {
+  main {
+    flex-basis: 60%;
+    padding: 0;
+  }
+  .container {
+    width: 97%;
+    padding: 2rem 0.5rem;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  main {
+    margin: 0 2.5%;
+    padding: 0 0 0 2rem;
+  }
+  .container {
+    width: 85%;
+    max-width: 60rem;
+  }
+}
