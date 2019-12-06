@@ -11,6 +11,7 @@ import Skills from "../components/Skills"
 import Education from "../components/Education"
 import ProfSkills from "../components/ProfSkills"
 import ContactBtn from "../components/ContactBtn"
+import Toggle from "../components/Toggle"
 
 const IndexPage = () => (
   <Layout>
@@ -22,6 +23,7 @@ const IndexPage = () => (
         <Contact />
         <Skills />
         <ContactBtn btnText="contact me" name="smile" />
+        <Toggle />
       </aside>
       <main>
         <Education />

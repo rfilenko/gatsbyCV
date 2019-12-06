@@ -1,0 +1,49 @@
+body.dark-mode {
+  --primary: var(--light-grey);
+  --secondary: var(--teal);
+  background: var(--light-grey);
+  &:after,
+  &:before {
+    filter: sepia(1);
+  }
+  .container {
+    background-color: var(--dark-text);
+    color: var(--whiteText);
+  }
+  .contact-btn {
+    color: var(--orange);
+    background-color: var(--dark-text);
+    border: 1px dashed currentColor;
+    ion-icon {
+      color: var(--orange);
+    }
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    --primary: var(--light-grey);
+    --secondary: var(--teal);
+    background: var(--light-grey);
+    &:after,
+    &:before {
+      filter: sepia(1);
+    }
+    .container {
+      background-color: var(--dark-text);
+      color: var(--whiteText);
+    }
+    .personal {
+      img {
+        mix-blend-mode: difference;
+      }
+    }
+    .contact-btn {
+      color: var(--orange);
+      background-color: var(--dark-text);
+      border: 1px dashed currentColor;
+      ion-icon {
+        color: var(--orange);
+      }
+    }
+  }
+}
