@@ -1,18 +1,25 @@
-import React, {useState} from "react"
+import React from "react"
 import dataSkills from "../data/skills"
-import Skill from "./Skill"
+
+import MdColorWand from "react-ionicons/lib/MdColorWand"
 
 const Skills = () => {
-  const [skills, setSkills] = useState(dataSkills);
   return (
     <div className="skills">
-      <ion-icon name="color-wand" size="large"></ion-icon>
+      <MdColorWand color="#38b2ac" fontSize="45px" />
       <h2>
         <span>skills </span>
       </h2>
       <div className="bubbles">
-        {skills.map( (item,index) => {
-          return <Skill key={`${index}-${item.name}`} text={item.text} name={item.name}/> 
+        {dataSkills.map(skill => {
+          return (
+            <div className="bubble" key={`index-${skill.text}`}>
+              <div className="front">
+                <skill.type color="#fff" fontSize="45px" />
+              </div>
+              <div className="back">{skill.text}</div>
+            </div>
+          )
         })}
       </div>
     </div>

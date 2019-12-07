@@ -1,16 +1,27 @@
 import React from "react"
 
+import logos from "../data/progressLogos"
 import MDDesktop from "react-ionicons/lib/MDDesktop"
+
+import LogoSass from "react-ionicons/lib/LogoSass"
+import LogoGithub from "react-ionicons/lib/LogoGithub"
+import LogoNodejs from "react-ionicons/lib/LogoNodejs"
 
 const ProgressBar = ({ name, value }) => {
   return (
     <div className="progress-wrap">
-      <ion-icon name={`logo-${name}`}></ion-icon>
-      <progress
-        max="100"
-        value={value}
-        data-tooltip={`Knowledge level of ${name} - ${value}%`}
-      ></progress>
+      {logos.map(logo => {
+        return (
+          <div className="progress-item">
+            <logo.type color="#38b2ac" />
+            <progress
+              max="100"
+              value={logo.value}
+              data-tooltip={`Knowledge level of ${name} - ${value}%`}
+            ></progress>
+          </div>
+        )
+      })}
     </div>
   )
 }
@@ -26,14 +37,12 @@ const ProfSkills = () => {
         <div>
           Programming and advanced technologies:
           <div className="prof-icons">
-            <ion-icon name="logo-sass"></ion-icon>
-            <ion-icon name="logo-github"></ion-icon>
-            <ion-icon name="logo-npm"></ion-icon>
+            <LogoSass color="#38b2ac" fontSize="45px" />
+            <LogoGithub color="#38b2ac" fontSize="45px" />
+            <LogoNodejs color="#38b2ac" fontSize="45px" />
           </div>
           <div className="prof-icons">
-            <ProgressBar name="html5" value={96} />
-            <ProgressBar name="css3" value={93} />
-            <ProgressBar name="javascript" value={72} />
+            <ProgressBar />
           </div>
         </div>
         <div>Work with:</div>
