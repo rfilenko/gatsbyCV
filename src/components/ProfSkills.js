@@ -5,7 +5,6 @@ import MDDesktop from "react-ionicons/lib/MDDesktop"
 
 import LogoSass from "react-ionicons/lib/LogoSass"
 import LogoGithub from "react-ionicons/lib/LogoGithub"
-import LogoNodejs from "react-ionicons/lib/LogoNodejs"
 
 const ProgressBar = props => {
   return (
@@ -39,7 +38,6 @@ const ProfSkills = () => {
           <div className="prof-icons">
             <LogoSass color="#38b2ac" fontSize="45px" />
             <LogoGithub color="#38b2ac" fontSize="45px" />
-            <LogoNodejs color="#38b2ac" fontSize="45px" />
           </div>
           <div className="prof-icons">
             <ProgressBar />
