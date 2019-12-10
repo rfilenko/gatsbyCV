@@ -7,17 +7,17 @@ import LogoSass from "react-ionicons/lib/LogoSass"
 import LogoGithub from "react-ionicons/lib/LogoGithub"
 import LogoNodejs from "react-ionicons/lib/LogoNodejs"
 
-const ProgressBar = ({ name, value }) => {
+const ProgressBar = props => {
   return (
     <div className="progress-wrap">
       {logos.map(logo => {
         return (
-          <div className="progress-item">
+          <div className="progress-item" key={logo.id}>
             <logo.type color="#38b2ac" />
             <progress
               max="100"
               value={logo.value}
-              data-tooltip={`Knowledge level of ${name} - ${value}%`}
+              data-tooltip={`Knowledge level of ${logo.name} - ${logo.value}%`}
             ></progress>
           </div>
         )
