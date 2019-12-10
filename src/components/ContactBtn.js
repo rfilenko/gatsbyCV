@@ -1,11 +1,11 @@
 import React from "react"
-import MdAt from "react-ionicons/lib/MdAt"
+import { IoMdAt } from "react-icons/io"
 
 const ContactBtn = ({ btnText, name }) => {
   return (
     <a href="mailto:roman.filenko@gmail.com" className="contact-btn">
       {btnText}
-      <MdAt
+      <IoMdAt
         name={name}
         fontSize="20px"
         color="white"

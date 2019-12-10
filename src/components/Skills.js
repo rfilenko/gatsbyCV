@@ -1,12 +1,12 @@
 import React from "react"
 import dataSkills from "../data/skills"
 
-import MdColorWand from "react-ionicons/lib/MdColorWand"
+import { IoMdColorWand } from "react-icons/io"
 
 const Skills = () => {
   return (
     <div className="skills">
-      <MdColorWand color="#38b2ac" fontSize="45px" />
+      <IoMdColorWand color="#38b2ac" fontSize="45px" />
       <h2>
         <span>skills </span>
       </h2>

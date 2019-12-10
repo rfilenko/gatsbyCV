@@ -1,7 +1,6 @@
 import React from "react"
 
-import MdSchool from "react-ionicons/lib/MdSchool"
-import MDCodeWorking from "react-ionicons/lib/MDCodeWorking"
+import { IoMdSchool, IoMdCodeWorking } from "react-icons/io"
 
 const experience = [
   {
@@ -51,7 +50,7 @@ const Education = () => {
   return (
     <>
       <div className="education">
-        <MdSchool color="#38b2ac" fontSize="45px" />
+        <IoMdSchool color="#38b2ac" fontSize="45px" />
         <h2>
           <span>education </span>
         </h2>
@@ -67,7 +66,7 @@ const Education = () => {
         </p>
       </div>
       <div className="work experience">
-        <MDCodeWorking color="#38b2ac" fontSize="45px" />
+        <IoMdCodeWorking color="#38b2ac" fontSize="45px" />
         <h2>
           <span>work experience </span>
         </h2>

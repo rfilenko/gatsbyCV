@@ -1,10 +1,12 @@
 import React from "react"
 
 import logos from "../data/progressLogos"
-import MDDesktop from "react-ionicons/lib/MDDesktop"
-
-import LogoSass from "react-ionicons/lib/LogoSass"
-import LogoGithub from "react-ionicons/lib/LogoGithub"
+import {
+  IoMdDesktop,
+  IoLogoSass,
+  IoLogoGithub,
+  IoLogoNpm,
+} from "react-icons/io"
 
 const ProgressBar = props => {
   return (
@@ -28,7 +30,7 @@ const ProgressBar = props => {
 const ProfSkills = () => {
   return (
     <div className="professional skills">
-      <MDDesktop color="#38b2ac" fontSize="45px" />
+      <IoMdDesktop color="#38b2ac" fontSize="45px" />
       <h2>
         <span>professional skills </span>
       </h2>
@@ -36,8 +38,9 @@ const ProfSkills = () => {
         <div>
           Programming and advanced technologies:
           <div className="prof-icons">
-            <LogoSass color="#38b2ac" fontSize="45px" />
-            <LogoGithub color="#38b2ac" fontSize="45px" />
+            <IoLogoSass color="#38b2ac" fontSize="45px" />
+            <IoLogoGithub color="#38b2ac" fontSize="45px" />
+            <IoLogoNpm color="#38b2ac" fontSize="45px" />
           </div>
           <div className="prof-icons">
             <ProgressBar />

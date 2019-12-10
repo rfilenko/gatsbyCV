@@ -1,7 +1,8 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import MdContact from 'react-ionicons/lib/MdContact'
+
+import { IoMdContact } from "react-icons/io"
 
 const Personal = () => {
   const photo = useStaticQuery(graphql`
@@ -28,7 +29,7 @@ const Personal = () => {
         <h3>frontend developer</h3>
       </div>
       <div className="profile">
-        <MdContact color="#38b2ac" fontSize="45px"/>
+        <IoMdContact color="#38b2ac" fontSize="45px" />
         <h2>
           <span>profile </span>
         </h2>
