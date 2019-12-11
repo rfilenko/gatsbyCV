@@ -35,7 +35,7 @@ Header.propTypes = {
 }
 
 Header.defaultProps = {
-  siteTitle: `brief cv page`,
+  siteTitle: `home`,
 }
 
 export default Header

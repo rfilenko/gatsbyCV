@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `personal cv`,
+    title: `CV page`,
     description: `made with ❤ using React, Gatsby, react-icons, deployed on netlify`,
-    author: `@gatsbyjs`,
+    author: `@roman.filenko`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -18,18 +18,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `gatsby based cv`,
+        short_name: `cv`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#38b2ac`,
+        theme_color: `#38b2ac`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-sass`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }

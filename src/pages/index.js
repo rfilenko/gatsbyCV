@@ -15,7 +15,7 @@ import Toggle from "../components/Toggle"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="<Personal />" />
     <div className="pattern-bg"></div>
     <div className="container">
       <aside>
