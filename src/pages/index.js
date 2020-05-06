@@ -15,7 +15,7 @@ import Toggle from "../components/Toggle"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="<Personal />" />
+    <SEO title="<Filenko />" />
     <div className="pattern-bg"></div>
     <div className="container">
       <aside>
