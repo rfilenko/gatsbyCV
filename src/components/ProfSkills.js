@@ -1,6 +1,4 @@
 import React from "react"
-
-import logos from "../data/progressLogos"
 import {
   IoMdDesktop,
   IoLogoSass,
@@ -8,56 +6,51 @@ import {
   IoLogoNpm,
 } from "react-icons/io"
 
-const ProgressBar = props => {
-  return (
-    <div className="progress-wrap">
-      {logos.map(logo => {
-        return (
-          <div className="progress-item" key={logo.id}>
-            <logo.type color="#38b2ac" />
-            <progress
-              max="100"
-              value={logo.value}
-              data-tooltip={`Knowledge level of ${logo.name} - ${logo.value}%`}
-            ></progress>
-          </div>
-        )
-      })}
-    </div>
-  )
-}
-
 const ProfSkills = () => {
   return (
-    <div className="professional skills">
+    <section className="professional skills">
       <IoMdDesktop color="#38b2ac" fontSize="45px" />
       <h2>
-        <span>professional skills </span>
+        <span>professional skills</span>
       </h2>
       <div className="description">
-        <div>
-          Programming and advanced technologies:
+        <article className="tech">
+          <h3>Programming and advanced technologies:</h3>
           <div className="prof-icons">
             <IoLogoSass color="#38b2ac" fontSize="45px" />
             <IoLogoGithub color="#38b2ac" fontSize="45px" />
             <IoLogoNpm color="#38b2ac" fontSize="45px" />
           </div>
-          <div className="prof-icons">
-            <ProgressBar />
-          </div>
-        </div>
-        <div>Work with:</div>
-        <ul>
-          <li>✓ build tools like webpack/gulp;</li>
-          <li>
-            ✓ experience with graphical tools (Sketch, Invision, Adobe XD);
-          </li>
-          <li>
-            ✓ responsive design (fluid, media queries), cross-browser coding;
-          </li>
-        </ul>
+        </article>
+
+        <article className="skillset">
+          <h3>Skillset:</h3>
+          <ul>
+            <li>✓ 95% team player;</li>
+            <li>✓ 92% time management;</li>
+            <li>✓ 83% working with others;</li>
+            <li>✓ 79% working under pressure.</li>
+          </ul>
+        </article>
+
+        <article className="prior-experience">
+          <h3>Prior experience:</h3>
+          <ul>
+            <li>✓ semantic markup, accessibilty checks;</li>
+            <li>✓ responsive design, media queries;</li>
+            <li>
+              ✓ modern css layout techniques like flexbox, css grid, css custom
+              variables;
+            </li>
+            <li>✓ build tools like webpack/gulp;</li>
+            <li>
+              ✓ modern graphical tools (Sketch, Figma, Invision, Adobe XD);
+            </li>
+            <li>✓ cross-browser coding, testing.</li>
+          </ul>
+        </article>
       </div>
-    </div>
+    </section>
   )
 }
 

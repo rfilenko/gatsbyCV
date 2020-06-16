@@ -298,3 +298,17 @@ nav {
     flex: 1 1 auto;
   }
 }
+
+// contact
+.contact-link {
+  color: var(--primary);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+
+  transition: all 0.25s ease-in-out;
+  &:hover,
+  &:focus {
+    color: var(--secondary);
+  }
+}

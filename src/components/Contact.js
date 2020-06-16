@@ -5,7 +5,9 @@ import {
   IoMdMailOpen,
   IoLogoSkype,
   IoLogoTwitter,
+  IoLogoGithub,
 } from "react-icons/io"
+import { MdDeveloperMode } from "react-icons/md"
 
 const Contact = () => {
   return (
@@ -24,6 +26,26 @@ const Contact = () => {
         </li>
         <li>
           <IoLogoTwitter color="#38b2ac" fontSize="20px" /> @r_filenko
+        </li>
+        <li>
+          <a
+            className="contact-link"
+            href="https://github.com/rfilenko"
+            target="_blank"
+          >
+            <IoLogoGithub color="#38b2ac" fontSize="20px" />
+            github
+          </a>
+        </li>
+        <li>
+          <a
+            className="contact-link"
+            href="https://www.frontendmentor.io/profile/rfilenko"
+            target="_blank"
+          >
+            <MdDeveloperMode color="#38b2ac" fontSize="20px" />
+            frontendmentor
+          </a>
         </li>
       </ul>
     </div>

@@ -11,9 +11,7 @@ const Toggle = () => {
   return (
     <div className="toggle">
       <label htmlFor="toggle" className="switch">
-        <span className="title">
-          switch {isChecked ? "light mode" : "dark mode"}
-        </span>
+        <span className="title">{isChecked ? "light" : "dark"} mode</span>
         <input
           id="toggle"
           type="checkbox"
