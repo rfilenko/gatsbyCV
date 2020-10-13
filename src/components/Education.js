@@ -3,18 +3,26 @@ import { IoMdSchool, IoMdCodeWorking } from "react-icons/io"
 import experience from "../data/experience"
 
 const Education = () => {
-  //get markup for single work place
+  //get markup for a single work place
   const workPlace = experience.map(place => {
     return (
-      <p key={place.time}>
+      <div key={place.time}>
         {" "}
         <time dateTime={place.dateTime}>{place.time} </time>
         --<b> {place.company}</b>
         <br />
-        <span>
-          position - <b>{place.role}</b> ({place.position})
-        </span>
-      </p>
+        <details>
+          <summary>
+            <div>
+              position - <b> {place.role},</b>
+              {!!place.technologies && (
+                <span> tech - ({place.technologies})</span>
+              )}
+            </div>
+          </summary>
+          ({place.position})
+        </details>
+      </div>
     )
   })
   return (

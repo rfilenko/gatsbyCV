@@ -37,8 +37,8 @@ const Personal = () => {
           Currently I'm looking for the position of frontend developer with the
           opportunity to implement the existing experience and participate in
           challeging projects. Interested in development of modern web
-          applications with possibility to continually discover and implement
-          trending technologies.
+          applications with possibility to continually discover, study trending
+          technologies.
         </p>
       </div>
     </>

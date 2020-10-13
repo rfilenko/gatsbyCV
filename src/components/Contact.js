@@ -32,6 +32,7 @@ const Contact = () => {
             className="contact-link"
             href="https://github.com/rfilenko"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <IoLogoGithub color="#38b2ac" fontSize="20px" />
             github
@@ -42,6 +43,7 @@ const Contact = () => {
             className="contact-link"
             href="https://www.frontendmentor.io/profile/rfilenko"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <MdDeveloperMode color="#38b2ac" fontSize="20px" />
             frontendmentor

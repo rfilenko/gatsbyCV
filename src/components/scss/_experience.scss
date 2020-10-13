@@ -1,12 +1,21 @@
 // .work.experience section
-.work.experience {
-  p {
+.experience {
+  div {
     text-align: left;
-    span {
-      padding-left: 1.5rem;
-      margin-top: 0.5rem;
-      display: block;
-    }
+  }
+}
+details {
+  margin-bottom: 1rem;
+  color: lightslategrey;
+}
+summary {
+  display: flex;
+  align-items: baseline;
+  color: var(--dark-grey);
+
+  div {
+    margin-top: 0.5rem;
+    display: inline-block;
   }
 }
 time {
