@@ -1,4 +1,4 @@
-![ScreenShot](https://raw.github.com/{rfilenko}/{gatsbyCV}/{master}/{images/rfilenko-cv.netlify.app.png})
+![ScreenShot](https://raw.githubusercontent.com/rfilenko/gatsbyCV/master/src/images/rfilenko-cv.netlify.app.png)
 
 <h1 align="center">
   Personal CV page with Gatsby</h1>
