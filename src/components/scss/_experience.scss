@@ -3,21 +3,22 @@
   div {
     text-align: left;
   }
-}
-details {
-  margin-bottom: 1rem;
-  color: lightslategrey;
-}
-summary {
-  display: flex;
-  align-items: baseline;
-  color: var(--dark-grey);
+  details {
+    margin-bottom: 1rem;
+    color: lightslategrey;
+  }
+  summary {
+    display: flex;
+    align-items: baseline;
+    color: var(--dark-grey);
 
-  div {
-    margin-top: 0.5rem;
-    display: inline-block;
+    div {
+      margin-top: 0.5rem;
+      display: inline-block;
+    }
   }
 }
+
 time {
   color: var(--primary);
 }
