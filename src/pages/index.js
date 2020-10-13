@@ -3,15 +3,15 @@ import "../components/scss/main.scss"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+//sections
+import Personal from "../components/sections/Personal"
+import Contact from "../components/sections/Contact"
+import Skills from "../components/sections/Skills"
+import Education from "../components/sections/Education"
+import ProfSkills from "../components/sections/ProfSkills"
 
-import Personal from "../components/Personal"
-import Contact from "../components/Contact"
-import Skills from "../components/Skills"
-
-import Education from "../components/Education"
-import ProfSkills from "../components/ProfSkills"
-import ContactBtn from "../components/ContactBtn"
-import Toggle from "../components/Toggle"
+import ContactBtn from "../components/ui/ContactBtn"
+import Toggle from "../components/ui/Toggle"
 
 const IndexPage = () => (
   <Layout>

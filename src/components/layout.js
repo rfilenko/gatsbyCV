@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import "./layout.scss"
+import "./scss/layout.scss"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`

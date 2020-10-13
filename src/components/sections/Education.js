@@ -1,6 +1,6 @@
 import React from "react"
 import { IoMdSchool, IoMdCodeWorking } from "react-icons/io"
-import experience from "../data/experience"
+import experience from "../../data/experience"
 
 const Education = () => {
   //get markup for a single work place

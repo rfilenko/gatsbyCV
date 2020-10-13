@@ -116,38 +116,41 @@ ion-icon {
 
 body {
   position: relative;
+  //top bg pattern
+  &::before {
+    content: "";
+    top: -3%;
+    position: absolute;
+    width: 100%;
+    height: 26%;
+    overflow: hidden;
+    -webkit-transform: skewY(-12deg);
+    transform: skewY(-12deg);
+    -webkit-transform-origin: 0;
+    transform-origin: 0;
+    background: linear-gradient(
+      125deg,
+      #667eea 15%,
+      #4fd1c5 70%,
+      var(--primary) 90%
+    );
+    z-index: -2;
+  }
+  //bottom bg pattern
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 99px;
+    height: 465px;
+    background: #f6f9fc;
+    -webkit-transform: skew(0, -12deg);
+    transform: skew(0, -12deg);
+    z-index: -2;
+  }
 }
-body:before {
-  content: "";
-  top: -3%;
-  position: absolute;
-  width: 100%;
-  height: 26%;
-  overflow: hidden;
-  -webkit-transform: skewY(-12deg);
-  transform: skewY(-12deg);
-  -webkit-transform-origin: 0;
-  transform-origin: 0;
-  background: linear-gradient(
-    125deg,
-    #667eea 15%,
-    #4fd1c5 70%,
-    var(--primary) 90%
-  );
-  z-index: -2;
-}
-body:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 99px;
-  height: 465px;
-  background: #f6f9fc;
-  -webkit-transform: skew(0, -12deg);
-  transform: skew(0, -12deg);
-  z-index: -2;
-}
+
 @media screen and (min-width: 768px) {
   body:before {
     content: "";

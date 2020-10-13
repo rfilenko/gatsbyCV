@@ -7,6 +7,7 @@ import {
   IoLogoHtml5,
   IoLogoCss3,
   IoLogoChrome,
+  IoMdColorWand,
 } from "react-icons/io"
 
 const IconPrimary = ({ variant, clr = "#38b2ac", fs = "45px" }) => {
@@ -23,6 +24,8 @@ const IconPrimary = ({ variant, clr = "#38b2ac", fs = "45px" }) => {
       return <IoLogoNpm color={clr} fontSize={fs} />
     case "IoLogoJavascript":
       return <IoLogoJavascript color={clr} fontSize={fs} />
+    case "IoMdColorWand":
+      return <IoMdColorWand color={clr} fontSize={fs} />
 
     default:
       return <IoLogoChrome color="#38b2ac" fontSize="45px" />

@@ -1,12 +1,11 @@
 import React from "react"
-import dataSkills from "../data/skills"
-
-import { IoMdColorWand } from "react-icons/io"
+import dataSkills from "../../data/skills"
+import IconPrimary from "../ui/IconPrimary"
 
 const Skills = () => {
   return (
     <div className="skills">
-      <IoMdColorWand color="#38b2ac" fontSize="45px" />
+      <IconPrimary variant="IoMdColorWand" />
       <h2>
         <span>skills </span>
       </h2>

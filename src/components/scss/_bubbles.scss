@@ -81,6 +81,9 @@
     transform: rotateY(180deg);
     left: 0.65em;
     right: 0.6em;
+    display: flex;
+    justify-content: center;
+    word-break: normal;
   }
 }
 @media screen and (min-width: 1024px) {

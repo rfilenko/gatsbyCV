@@ -1,6 +1,6 @@
 import React from "react"
 import { IoMdDesktop } from "react-icons/io"
-import IconPrimary from "./IconPrimary"
+import IconPrimary from "../ui/IconPrimary"
 
 const iconsArr = [
   "IoLogoHtml5",

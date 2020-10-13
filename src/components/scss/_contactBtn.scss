@@ -12,16 +12,18 @@
   text-decoration: none;
   display: inline-flex;
   transition: all 0.15s ease-in;
+
   &:hover {
-    filter: drop-shadow(2px 4px 6px lightgrey) brightness(120%) hue-rotate(2deg);
+    filter: drop-shadow(2px 4px 6px var(--secondary)) brightness(120%)
+      hue-rotate(2deg);
   }
+
   ion-icon {
     transform: rotate(90deg);
     width: 1.4rem;
     color: var(--whiteText);
   }
   svg {
-    // writing-mode: vertical-lr;
     transform: translateX(30%) rotate(90deg);
   }
 }
