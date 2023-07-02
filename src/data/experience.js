@@ -5,7 +5,7 @@ const experience = [
     company: "Giant interactive s.r.o",
     role: "frontend developer",
     technologies: "LATTE, NextJS, Stylus, Figma, GitLab",
-    position: `development and design of front-end web pages using HTML (LATTE templating system), CSS preprocessor Stylus, JavaScript component development, Gitlab. Ensuring website compatibility with all browsers and devices, fast loading of web pages, accessibility (Lighthouse).`,
+    position: `development and design of front-end web pages using HTML (LATTE templating system), CSS preprocessor Stylus, JavaScript component development, Gitlab. Ensuring website compatibility with all browsers and devices, fast loading of web pages, accessibility - Lighthouse`,
   },
   {
     dateTime: "2020-07 --- 2020-10",

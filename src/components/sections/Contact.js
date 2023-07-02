@@ -24,9 +24,9 @@ const Contact = () => {
         <li>
           <IoLogoSkype color="#38b2ac" fontSize="20px" /> romafilenko
         </li>
-        <li>
+        {/* <li>
           <IoLogoTwitter color="#38b2ac" fontSize="20px" /> @r_filenko
-        </li>
+        </li> */}
         <li>
           <a
             className="contact-link"
